@@ -1,0 +1,21 @@
+<h3>Add A Review For Monana</h3>
+<div *ngFor='let error of errors'>
+    <p style='color: red;'>{{ error }}</p>
+</div>
+<div class='create_info'>
+  <form (submit)='onCreate()'>
+      
+
+    <p>Your Name:</p>
+    <input type='text' name='type' [(ngModel)]='movieInfo.yourName'>
+
+    <p>Rating  ADD DROP DOWN ------</p>
+    <br>
+
+    <p>YourReview:</p> 
+    <input type='text' name='description' [(ngModel)]='movieInfo.yourReview'>
+  
+    <br>
+    <input type='submit' value='Add Movie'> | <a href='/'> <button type='button'>Cancel</button></a>
+  </form>
+</div>

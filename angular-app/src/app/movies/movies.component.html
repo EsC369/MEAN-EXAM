@@ -1,0 +1,16 @@
+<h3>Movies List</h3>
+<a href='/movies/new'>Add A New movie</a>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Actions</td>
+        </tr> 
+    </thead>
+    <tbody *ngFor='let movie of movies'>
+        <tr>
+            <td>{{ movie.title }}</td>
+            <td><button (click)='goShowmovie(movie)'>Read Reviews </button> | <button (click)='goEditmovie(movie)'>edit</button></td>
+        </tr>
+    </tbody>
+</table>

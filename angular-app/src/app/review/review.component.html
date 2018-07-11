@@ -1,0 +1,30 @@
+<h3>Add A Review For Monana</h3>
+<div *ngFor='let error of errors'>
+    <p style='color: red;'>{{ error }}</p>
+</div>
+<div class='create_info'>
+  <form (submit)='onCreate()'>
+      
+
+    <p>Your Name:</p>
+    <input type='text' name='type' [(ngModel)]='movieInfo.yourName'>
+
+    <p>Rating  ADD DROP DOWN ------</p>
+    <br>
+
+    <p>YourReview:</p>
+    <input type='text' name='description' [(ngModel)]='movieInfo.yourReview'>
+    
+
+    <!-- CHANGE TO STARS- -->
+    <!-- <p>Skills:</p>
+      <div class='skills'> 
+      <p>Skill 1: <input type='text' name='skillOne' [(ngModel)]='movieInfo.skills[0]'></p>
+      <p>Skill 2: <input type='text' name='skillTwo' [(ngModel)]='movieInfo.skills[1]'></p>
+      <p>Skill 3: <input type='text' name='skillThree' [(ngModel)]='movieInfo.skills[2]'></p>
+    </div> -->
+     <!-- CHANGE TO STARS- -->
+    <br>
+    <input type='submit' value='Add Movie'> | <a href='/'> <button type='button'>Cancel</button></a>
+  </form>
+</div>

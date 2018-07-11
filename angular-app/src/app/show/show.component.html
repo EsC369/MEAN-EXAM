@@ -1,0 +1,13 @@
+<div id='wrapper'>
+    <a href='/'>Home</a>
+    <div *ngIf='movie'>
+    <!-- <div *ngFor='let review of reviews'> -->
+        <h2>Details About: {{ movie.title }}</h2>
+        <p align="left"> <button (click)='onDestroy(movie)'>Delete movie!</button> </p>
+        <hr>
+        <h3>Reviewer: <span>{{ movie.name }}</span></h3>
+        <h3>Stars: <span{{ movie.stars }}</h3></span></h3>
+        <h3>Description: <span>{{ movie.review }}</span></h3>
+        <hr> 
+    </div>
+  </div>
